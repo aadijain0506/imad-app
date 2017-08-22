@@ -5,25 +5,66 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var Articleone = {
-    title: 'Article One | Aadi Jain',
-    heading: 'Article One',
-    date: 'August 22, 2017',
-    content: `<p>
-                    Hello everyone this is the content of my first article.
-                    Hello everyone this is the content of my first article.
-                    Hello everyone this is the content of my first article.
-                </p>
-                <p>
-                    Hello everyone this is the content of my first article.
-                    Hello everyone this is the content of my first article.
-                    Hello everyone this is the content of my first article.
-                </p>
-                <p>
-                    Hello everyone this is the content of my first article.
-                    Hello everyone this is the content of my first article.
-                    Hello everyone this is the content of my first article.
-                </p>`
+var Articles = { 
+    Articleone = {
+        title: 'Article One | Aadi Jain',
+        heading: 'Article One',
+        date: 'August 22, 2017',
+        content: `<p>
+                        Hello everyone this is the content of my first article.
+                        Hello everyone this is the content of my first article.
+                        Hello everyone this is the content of my first article.
+                    </p>
+                    <p>
+                        Hello everyone this is the content of my first article.
+                        Hello everyone this is the content of my first article.
+                        Hello everyone this is the content of my first article.
+                    </p>
+                    <p>
+                        Hello everyone this is the content of my first article.
+                        Hello everyone this is the content of my first article.
+                        Hello everyone this is the content of my first article.
+                    </p>`
+    },
+    Articletwo = {
+        title: 'Article Two | Aadi Jain',
+        heading: 'Article Two',
+        date: 'August 22, 2017',
+        content: `<p>
+                        Hello everyone this is the content of my second article.
+                        Hello everyone this is the content of my second article.
+                        Hello everyone this is the content of my second article.
+                    </p>
+                    <p>
+                        Hello everyone this is the content of my second article.
+                        Hello everyone this is the content of my secondarticle.
+                        Hello everyone this is the content of my second article.
+                    </p>
+                    <p>
+                        Hello everyone this is the content of my second article.
+                        Hello everyone this is the content of my second article.
+                        Hello everyone this is the content of my second article.
+                    </p>`},
+    Articlethree = {
+        title: 'Article Three | Aadi Jain',
+        heading: 'Article Three',
+        date: 'August 22, 2017',
+        content: `<p>
+                        Hello everyone this is the content of my third article.
+                        Hello everyone this is the content of my third article.
+                        Hello everyone this is the content of my third article.
+                    </p>
+                    <p>
+                        Hello everyone this is the content of my third article.
+                        Hello everyone this is the content of my third article.
+                        Hello everyone this is the content of my third article.
+                    </p>
+                    <p>
+                        Hello everyone this is the content of my third article.
+                        Hello everyone this is the content of my third article.
+                        Hello everyone this is the content of my third article.
+                    </p>`
+    }
 };
 
 function createTemplate (data) {
